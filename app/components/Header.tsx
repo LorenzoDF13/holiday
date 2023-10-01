@@ -28,7 +28,7 @@ const Header = (props: Props) => {
           </div>
           <div className="flex justify-end">
             <div className=" ">
-              <button className="btn btn-ghost">Link</button>
+              <button className="btn btn-ghost">Appartamenti</button>
               <ThemeSwitcher />
             </div>
           </div>

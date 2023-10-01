@@ -29,24 +29,24 @@ const Footer = (props: Props) => {
         </aside>
         <nav>
           <header className="footer-title">Dove Siamo</header>
-          <button className="link ">Silvi Marina(TE) 64028</button>
-          <button className="link ">Via Italia 2 </button>
-          <button className="link ">P.IVA 00845670678</button>
-          <button className="link ">Numero Rea: TE999-12</button>
+          <button>Silvi Marina(TE) 64028</button>
+          <button>Via Italia 2 </button>
+          <button>P.IVA 00845670678</button>
+          <button>Numero Rea: TE999-12</button>
         </nav>
         <nav>
           <header className="footer-title">Orari ufficio</header>
-          <button className="link ">Lunedì - Sabato</button>
-          <button className="link ">9:00 - 19:00</button>
-          <button className="link ">Domenica chiuso</button>
-          <button className="link ">Lorem Ipsum</button>
+          <button>Lunedì - Sabato</button>
+          <button>9:00 - 19:00</button>
+          <button>Domenica chiuso</button>
+          <button>Lorem Ipsum</button>
         </nav>
         <nav>
           <header className="footer-title">Contatti</header>
-          <button className="link ">Email: reception@holidayservices.it</button>
-          <button className="link ">Tel. 085 9353848</button>
-          <button className="link ">Privacy policy</button>
-          <button className="link ">Cookie policy</button>
+          <button>Email: reception@holidayservices.it</button>
+          <button>Tel. 085 9353848</button>
+          <button>Privacy policy</button>
+          <button>Cookie policy</button>
         </nav>
       </section>
     </footer>
