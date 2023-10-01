@@ -13,8 +13,8 @@ console.log(pages);
 const page = (props: Props) => {
   return (
     <div className="max-w-screen-lg px-5 m-auto">
-      <Link href={"/green-marine"}>
-        <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-96 bg-base-100 shadow-xl">
+        <Link href={"/green-marine"}>
           <figure>
             <Image src={imgGreenMarine} alt="green marine" />{" "}
           </figure>
@@ -23,13 +23,13 @@ const page = (props: Props) => {
 
             <p>
               Appartamenti Vacanze a Silvi Marina Affitti appartamenti in
-              residence sul mare a Silvi Marina. E' uno dei fiori all'occhiello
-              di Silvi Marina. Unico per caratteristiche, con un parco di
-              migliaia…
+              residence sul mare a Silvi Marina. E &apos; uno dei fiori
+              all&apos; occhiello di Silvi Marina. Unico per caratteristiche,
+              con un parco di migliaia…
             </p>
           </div>
-        </div>
-      </Link>
+        </Link>
+      </div>
     </div>
   );
 };
