@@ -28,7 +28,34 @@ const Header = (props: Props) => {
           </div>
           <div className="flex  justify-end">
             <div className=" hidden sm:block">
-              <button className="btn btn-ghost">Appartamenti</button>
+              <div className="dropdown dropdown-bottom dropdown-end ">
+                <label tabIndex={0} className="btn btn-ghost ">
+                  Appartamenti{" "}
+                  <svg
+                    width="12px"
+                    height="12px"
+                    className="hidden h-2 w-2 fill-current opacity-60 sm:inline-block"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 2048 2048"
+                  >
+                    <path d="M1799 349l242 241-1017 1017L7 590l242-241 775 775 775-775z"></path>
+                  </svg>
+                </label>
+                <ul
+                  tabIndex={0}
+                  className="menu  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box "
+                >
+                  <li>
+                    <button>Lista</button>
+                  </li>
+                  <li>
+                    <button>Prezzi</button>
+                  </li>
+                  <li>
+                    <button>Disponibilità</button>
+                  </li>
+                </ul>
+              </div>
               <ThemeSwitcher />
             </div>
             <div className="dropdown dropdown-bottom dropdown-end sm:hidden">
