@@ -13,7 +13,7 @@ console.log(pages);
 const page = (props: Props) => {
   return (
     <div className="max-w-screen-lg px-5 m-auto">
-      <div className="card w-96 bg-base-100 shadow-xl">
+      <div className="card w-96 card-compact sm:card-normal bg-base-100 shadow-xl">
         <Link href={"/green-marine"}>
           <figure>
             <Image src={imgGreenMarine} alt="green marine" />{" "}

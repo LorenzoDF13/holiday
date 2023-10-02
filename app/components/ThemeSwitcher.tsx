@@ -56,7 +56,7 @@ const ThemeSwitcher = (props: Props) => {
   return (
     <div className="dropdown dropdown-end">
       <label tabIndex={0} className="btn btn-ghost m-1 ">
-        Tema{" "}
+        Tema
         {
           <svg
             width="12px"
