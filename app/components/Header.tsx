@@ -7,7 +7,7 @@ const Header = (props: Props) => {
   return (
     <header className="bg-base-100 border-base-200 mb-12 shadow-sm">
       <div className="max-w-screen-lg px-4 m-auto">
-        <div className="navbar    ">
+        <div className="navbar   p-0 ">
           <div className="flex-1 ">
             <Link href={"/"} className="btn btn-ghost normal-case text-xl">
               <svg
@@ -30,7 +30,7 @@ const Header = (props: Props) => {
             <div className=" hidden sm:block">
               <div className="dropdown dropdown-bottom dropdown-end ">
                 <label tabIndex={0} className="btn btn-ghost ">
-                  Appartamenti{" "}
+                  Affitto
                   <svg
                     width="12px"
                     height="12px"
@@ -46,7 +46,7 @@ const Header = (props: Props) => {
                   className="menu  dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box "
                 >
                   <li>
-                    <button>Lista</button>
+                    <button>Appartamenti</button>
                   </li>
                   <li>
                     <button>Prezzi</button>
@@ -56,6 +56,9 @@ const Header = (props: Props) => {
                   </li>
                 </ul>
               </div>
+              <button className="btn btn-ghost">In Vendita</button>
+              <button className="btn btn-ghost">Il Luogo</button>
+              <button className="btn btn-ghost">Contatti</button>
               <ThemeSwitcher />
             </div>
             <div className="dropdown dropdown-bottom dropdown-end sm:hidden">
@@ -80,13 +83,25 @@ const Header = (props: Props) => {
                 className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
               >
                 <li>
-                  <button>Appartamenti</button>
+                  <button>Affitto</button>
+                  <ul>
+                    <li>
+                      <button>Appartamenti</button>
+                    </li>
+                    <li>
+                      <button>Prezzi</button>
+                    </li>
+                    <li>
+                      <button>Disponibilità</button>
+                    </li>
+                  </ul>
                 </li>
                 <li>
-                  <button>Prezzi</button>
+                  <button>In vendita</button>
                 </li>
+
                 <li>
-                  <button>Disponibilità</button>
+                  <button>Il lugo</button>
                 </li>
                 <li>
                   <button>Contatti</button>
