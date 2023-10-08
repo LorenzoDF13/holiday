@@ -1,0 +1,28 @@
+{
+  "Header": {
+    "rent": "Affitto",
+    "sell": "in vendita",
+    "place": "il luogo",
+    "contacts": "contatti",
+    "theme": "tema",
+    "language": "lingua",
+    "apartments": "Appartamenti",
+    "pricing": "Prezzi",
+    "availability": "Disponibilità"
+  },
+  "Footer": {
+    "where we are": "Dove siamo",
+    "officeHours": {
+      "header": "Orari Ufficio",
+      "days": "Lunedi-Sabato",
+      "sunday": "Domenica Chiuso"
+    },
+
+    "contacts": "contacts",
+    "description": "apartaments by the sea  since 1977"
+  },
+  "Index": {
+    "subtitle": "Affittiamo e vendiamo i migliori residence di Silvi Marina",
+    "GreenMarineDescription": "Silvi Marina direttamente sul mare, affitti appartamenti in residence a Silvi Marina per le vacanze. Sono due residence completamente recintati con grande parco condominiale direttamente sul mare..."
+  }
+}

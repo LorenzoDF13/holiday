@@ -10,8 +10,8 @@ type Props = {
 const Card = (props: Props) => {
   return (
     <div className="card  p-4  ">
-      <figure className=" p-6 bg-base-300 opacity-70 mask mask-hexagon">
-        <props.icon color="hsl(var(--a))" className="opacity-100" size="3rem" />
+      <figure className=" p-6 bg-base-200  mask mask-hexagon">
+        <props.icon color="hsl(var(--p))" className="opacity-100" size="3rem" />
       </figure>
       <div className="card-body">
         <h2 className="card-title font-bold justify-center text-center">

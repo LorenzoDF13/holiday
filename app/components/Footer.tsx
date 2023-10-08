@@ -1,11 +1,14 @@
+"use client";
+import { useTranslations } from "next-intl";
 import React from "react";
 
 type Props = {};
 
 const Footer = (props: Props) => {
+  const t = useTranslations("Footer");
   return (
     <footer className="w-full bg-neutral">
-      <section className="footer p-10 gap-x-24 bg-neutral mt-12 text-neutral-content w-full  max-w-screen-lg px-4 m-auto">
+      <section className="footer p-10 gap-x-20 bg-neutral mt-12 text-neutral-content w-full  max-w-screen-lg px-4 m-auto">
         <aside>
           <svg
             width={"60"}
@@ -24,27 +27,29 @@ const Footer = (props: Props) => {
           <p>
             Holiday Services S.R.L
             <br />
-            Appartamenti sul mare dal 1997
+            {t("description")}
           </p>
         </aside>
         <nav>
-          <header className="footer-title">Dove Siamo</header>
+          <header className="footer-title">{t("where we are")}</header>
           <button>Silvi Marina(TE) 64028</button>
           <button>Via Italia 2 </button>
           <button>P.IVA 00845670678</button>
           <button>Numero Rea: TE999-12</button>
         </nav>
         <nav>
-          <header className="footer-title">Orari ufficio</header>
-          <button>Lunedì - Sabato</button>
+          <header className="footer-title">{t("officeHours.header")}</header>
+          <button>{t("officeHours.days")}</button>
           <button>9:00 - 19:00</button>
-          <button>Domenica chiuso</button>
+          <button>{t("officeHours.sunday")}</button>
           <button>Lorem Ipsum</button>
         </nav>
         <nav>
-          <header className="footer-title">Contatti</header>
-          <button>Email: reception@holidayservices.it</button>
-          <button>Tel. 085 9353848</button>
+          <header className="footer-title">{t("contacts")}</header>
+          <a href="mailto:reception@holidayservices.it">
+            Email: reception@holidayservices.it
+          </a>
+          <a href="tel: 0859353848">Tel. 085 9353848</a>
           <button>Privacy policy</button>
           <button>Cookie policy</button>
         </nav>

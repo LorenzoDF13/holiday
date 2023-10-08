@@ -32,7 +32,7 @@ const PhotoGallery = (props: Props) => {
   return (
     <Gallery options={{ bgOpacity: 0.5, mainClass: "bg-base-100" }}>
       <div>
-        <div className="flex gap-4 m-auto flex-col md:flex-row  max-w-screen-lg px-4 mx-auto">
+        <div className="flex gap-4 m-auto mt-12 flex-col md:flex-row  max-w-screen-lg px-4 mx-auto">
           <div className=" md:max-w-2/3 w-full hover:bg-neutral-400 hover:opacity-50  relative  hover:text-base-300  cursor-pointer transition-all rounded-md overflow-hidden ">
             <Item
               original="green-marine/hero.jpg"

@@ -1,0 +1,28 @@
+{
+  "Header": {
+    "rent": "Rent",
+    "on sale": "On Sale",
+    "place": "place",
+    "contacts": "Contacts",
+    "theme": "Theme",
+    "language": "language",
+    "apartments": "Apartments",
+    "pricing": "Pricing",
+    "availability": "Availability"
+  },
+  "Index": {
+    "subtitle": "We sell and rent the best residences in town",
+    "GreenMarineDescription": "Silvi Marina directly on the sea, apartment rentals in residences in Silvi Marina for the holidays. They are two completely fenced residences with a large communal park directly on the sea..."
+  },
+  "Footer": {
+    "where we are": "Where we are",
+    "officeHours": {
+      "header": "Office Hours",
+      "days": "Monday-Saturday",
+      "sunday": "Sunday closed"
+    },
+
+    "contacts": "contacts",
+    "description": "apartaments by the sea  since 1977"
+  }
+}

@@ -9,7 +9,23 @@ const config: Config = {
   theme: {},
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
-    themes: ["dark", "light", "winter", "aqua", "fantasy"],
+    themes: [
+      "emerald",
+      {
+        light: {
+          ...require("daisyui/src/theming/themes")["[data-theme=winter]"],
+          primary: "#1d4ed8",
+        },
+        dark: {
+          ...require("daisyui/src/theming/themes")["[data-theme=night]"],
+          primary: "#1d4ed8",
+        },
+      },
+      ,
+      "winter",
+      "aqua",
+      "fantasy",
+    ],
   },
 };
 export default config;

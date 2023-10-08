@@ -1,17 +1,21 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { useTheme } from "next-themes";
+
 import React, { MutableRefObject, useEffect, useState } from "react";
 
 type Props = {};
 
 const ThemeSwitcher = (props: Props) => {
   const { theme, setTheme } = useTheme();
+  const t = useTranslations("Header");
   const [mounted, setMounted] = useState(false);
   useEffect(() => setMounted(true), []);
+
   if (!mounted) {
     return (
-      <label tabIndex={0} className="btn btn-ghost m-1 ">
-        Tema{" "}
+      <label tabIndex={0} className={`btn btn-ghost m-1 `}>
+        {t("theme")}
         {
           <svg
             width="12px"
@@ -55,8 +59,8 @@ const ThemeSwitcher = (props: Props) => {
   };
   return (
     <div className="dropdown dropdown-end">
-      <label tabIndex={0} className="btn btn-ghost m-1 ">
-        Tema
+      <label tabIndex={0} className={`btn btn-ghost m-1 `}>
+        {t("theme")}
         {
           <svg
             width="12px"
@@ -71,7 +75,7 @@ const ThemeSwitcher = (props: Props) => {
       </label>
       <ul
         tabIndex={0}
-        className="p-2 dropdown-content shadow z-[1] menu rounded-box  bg-base-100"
+        className="p-2 dropdown-content shadow z-[1] menu rounded-box text-base-content bg-base-100"
       >
         <li>
           <Button theme="light" titolo="Chiaro" />
