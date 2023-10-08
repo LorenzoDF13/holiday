@@ -2,11 +2,11 @@
 import Image from "next/image";
 import React from "react";
 import imgGreenMarine from "../../public/green-marine/2.webp";
-import Link from "next/link";
+import Link from "next-intl/link";
 import { useTranslations } from "next-intl";
 type Props = {};
 
-const page = (props: Props) => {
+const Page = (props: Props): React.ReactNode => {
   const t = useTranslations("Index");
   return (
     <main>
@@ -15,7 +15,7 @@ const page = (props: Props) => {
         className="w-screen h-[125vh] relative -translate-y-20 top-0 -z-10 "
       >
         <video
-          src="video4k.mp4"
+          src="video4kshort.mp4"
           className="w-full object-cover  h-full"
           autoPlay
           muted
@@ -61,4 +61,4 @@ const page = (props: Props) => {
   );
 };
 
-export default page;
+export default Page;

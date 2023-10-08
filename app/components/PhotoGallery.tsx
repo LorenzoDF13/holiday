@@ -14,29 +14,33 @@ import img7 from "../../public/green-marine/7.webp";
 import img8 from "../../public/green-marine/8.webp";
 
 import hero from "../../public/green-marine/hero.jpg";
+import { useTranslations } from "next-intl";
+import { usePathname } from "next-intl/client";
 
 type Props = {};
-const hiddenImages: {
-  src: string;
-  width?: number | string;
-  height?: number | string;
-}[] = [
-  { src: "green-marine/3.webp", width: 1000, height: 666 },
-  { src: "green-marine/4.webp", width: 600, height: 800 },
-  { src: "green-marine/5.webp", width: 600, height: 800 },
-  { src: "green-marine/6.webp", width: 600, height: 800 },
-  { src: "green-marine/7.webp", width: 1000, height: 750 },
-  { src: "green-marine/8.webp", width: 1000, height: 750 },
-];
 const PhotoGallery = (props: Props) => {
+  const locale = usePathname();
+  const hiddenImages: {
+    src: string;
+    width?: number | string;
+    height?: number | string;
+  }[] = [
+    { src: "green-marine/3.webp", width: 1000, height: 666 },
+    { src: "green-marine/4.webp", width: 600, height: 800 },
+    { src: "green-marine/5.webp", width: 600, height: 800 },
+    { src: "green-marine/6.webp", width: 600, height: 800 },
+    { src: "green-marine/7.webp", width: 1000, height: 750 },
+    { src: "green-marine/8.webp", width: 1000, height: 750 },
+  ];
+  const t = useTranslations("GreenMarine");
   return (
     <Gallery options={{ bgOpacity: 0.5, mainClass: "bg-base-100" }}>
       <div>
         <div className="flex gap-4 m-auto mt-12 flex-col md:flex-row  max-w-screen-lg px-4 mx-auto">
           <div className=" md:max-w-2/3 w-full hover:bg-neutral-400 hover:opacity-50  relative  hover:text-base-300  cursor-pointer transition-all rounded-md overflow-hidden ">
             <Item
-              original="green-marine/hero.jpg"
-              thumbnail="green-marine/hero.jpg"
+              original={`${locale != "/" && "../"}green-marine/hero.jpg`}
+              thumbnail={`${locale != "/" && "../"}green-marine/hero.jpg`}
               width={"1000"}
               height={"664"}
             >
@@ -55,8 +59,8 @@ const PhotoGallery = (props: Props) => {
           <div className="flex md:flex-col flex-row  relative gap-4    md:w-1/3">
             <div className="relative h-40 hover:bg-neutral-400 hover:opacity-50 w-1/2 md:h-1/2 md:w-full cursor-pointer rounded-md overflow-hidden">
               <Item
-                original="green-marine/2.webp"
-                thumbnail="green-marine/2.webp"
+                original={`${locale != "/" && "../"}green-marine/2.webp`}
+                thumbnail={`${locale != "/" && "../"}green-marine/2.webp`}
                 width={1000}
                 height={666}
               >
@@ -74,8 +78,8 @@ const PhotoGallery = (props: Props) => {
             </div>
             <div className="h-40 w-1/2  md:h-1/2 - relative md:w-full  ">
               <Item
-                original="green-marine/1.webp"
-                thumbnail="green-marine/1.webp"
+                original={`${locale != "/" && "../"}green-marine/1.webp`}
+                thumbnail={`${locale != "/" && "../"}green-marine/1.webp`}
                 width={1000}
                 height={664}
               >
@@ -93,7 +97,7 @@ const PhotoGallery = (props: Props) => {
                       onClick={open}
                       className="absolute link z-20 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                     >
-                      Visualizza le altre 7 foto{" "}
+                      {t("photo")}
                     </button>
                   </>
                 )}
@@ -103,8 +107,8 @@ const PhotoGallery = (props: Props) => {
                   return (
                     <Item
                       key={i + 999}
-                      original={image.src}
-                      thumbnail={image.src}
+                      original={`${locale != "/" && "../"}${image.src}`}
+                      thumbnail={`${locale != "/" && "../"}${image.src}`}
                       alt="image gallery "
                       width={image?.width || 1000}
                       height={image?.height || 664}

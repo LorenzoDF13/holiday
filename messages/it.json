@@ -1,7 +1,7 @@
 {
   "Header": {
     "rent": "Affitto",
-    "sell": "in vendita",
+    "on sell": "in vendita",
     "place": "il luogo",
     "contacts": "contatti",
     "theme": "tema",
@@ -9,6 +9,21 @@
     "apartments": "Appartamenti",
     "pricing": "Prezzi",
     "availability": "Disponibilità"
+  },
+  "Index": {
+    "subtitle": "Affittiamo e vendiamo i migliori residence di Silvi Marina",
+    "GreenMarineDescription": "Silvi Marina direttamente sul mare, affitti appartamenti in residence a Silvi Marina per le vacanze. Sono due residence completamente recintati con grande parco condominiale direttamente sul mare..."
+  },
+  "GreenMarine": {
+    "photo": "visualizza altre 7 foto",
+    "beach": "Spiaggia",
+    "beachDescription": "i nostri fantastici appartamenti sono fronte mare e con accesso super rapido alla spiaggia",
+    "park": "Parco Recintato",
+    "parkDescription": "Sono due residence completamente recintati con grande parco condominiale direttamente sul mare, confinante con la splendida spiaggia.",
+    "tourist": "Area Turistica",
+    "touristDescription": "I nostri residence sono in una zona ad alta frequentazione vicino a ristoranti bar e locali",
+    "description": "Silvi Marina direttamente sul mare, affitti appartamenti in residence a Silvi Marina per le vacanze. Sono due residence completamente recintati con grande parco condominiale direttamente sul mare, confinante con la splendida spiaggia. Si trovano nella zona sud del paese, proprio nella zona con maggiore ricettività turistica. Ideale per le famiglie, per i giovani e per chi cerca nella vacanza tranquillità e riposo. Divertimenti e opportunità di svago a pochissima distanza dai residences. Negozi, bar e ristoranti all’esterno del residence stesso. In queste strutture sono disponibili monolocali 3 letti – bilocali 4/5 letti – trilocali 6/7 letti.",
+    "descriptionWord": "Descrizione"
   },
   "Footer": {
     "where we are": "Dove siamo",
@@ -20,9 +35,5 @@
 
     "contacts": "contacts",
     "description": "apartaments by the sea  since 1977"
-  },
-  "Index": {
-    "subtitle": "Affittiamo e vendiamo i migliori residence di Silvi Marina",
-    "GreenMarineDescription": "Silvi Marina direttamente sul mare, affitti appartamenti in residence a Silvi Marina per le vacanze. Sono due residence completamente recintati con grande parco condominiale direttamente sul mare..."
   }
 }

@@ -7,7 +7,9 @@ import Card from "../../components/Card";
 import TipologieTable from "../../components/TipologieTable";
 import PhotoGallery from "../../components/PhotoGallery";
 import { useEffect } from "react";
+import { useTranslations } from "next-intl";
 export default function Home() {
+  const t = useTranslations("GreenMarine");
   useEffect(() => {
     //document.getElementById("enter")!.style.height = "0";
     AOS.init();
@@ -54,20 +56,20 @@ export default function Home() {
         >
           <div className="flex min-w-[768px] justify-center">
             <Card
-              title="Spiaggia"
-              content="i nostri fantastici appartamenti sono fronte mare e con accesso super rapido alla spiaggia"
+              title={t("beach")}
+              content={t("beachDescription")}
               icon={FaUmbrellaBeach}
             />
             <div className="divider   divider-horizontal"></div>
             <Card
-              title="Parco Recintato"
-              content="Sono due residence completamente recintati con grande parco condominiale direttamente sul mare, confinante con la splendida spiaggia."
+              title={t("park")}
+              content={t("parkDescription")}
               icon={PiParkFill}
             />
             <div className="divider  divider-horizontal"></div>
             <Card
-              title="Area Turistica"
-              content="I nostri residence sono in una zona ad alta frequentazione vicino a ristoranti bar e locali"
+              title={t("tourist")}
+              content={t("touristDescription")}
               icon={FaCity}
             />
           </div>
@@ -76,20 +78,8 @@ export default function Home() {
           data-aos="fade-up"
           className="prose max-w-screen-lg px-4 m-auto"
         >
-          <h2>Descrizione</h2>
-          <p className="text-justify">
-            Silvi Marina direttamente sul mare, affitti appartamenti in
-            residence a Silvi Marina per le vacanze. Sono due residence
-            completamente recintati con grande parco condominiale direttamente
-            sul mare, confinante con la splendida spiaggia. Si trovano nella
-            zona sud del paese, proprio nella zona con maggiore ricettività
-            turistica. Ideale per le famiglie, per i giovani e per chi cerca
-            nella vacanza tranquillità e riposo. Divertimenti e opportunità di
-            svago a pochissima distanza dai residences. Negozi, bar e ristoranti
-            all’esterno del residence stesso. In queste strutture sono
-            disponibili monolocali 3 letti – bilocali 4/5 letti – trilocali 6/7
-            letti.
-          </p>
+          <h2>{t("descriptionWord")}</h2>
+          <p className="text-justify">{t("description")}</p>
         </section>
         <section
           data-aos="fade-up"

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
-import Link from "next/link";
+import Link from "next-intl/link";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { useTranslations } from "next-intl";
 
@@ -97,7 +97,7 @@ const Header = (props: Props) => {
                       <button>{t("pricing")}</button>
                     </li>
                     <li>
-                      <button>{t("availabilty")}</button>
+                      <button>{t("availability")}</button>
                     </li>
                   </ul>
                 </li>
@@ -106,7 +106,7 @@ const Header = (props: Props) => {
                 </li>
 
                 <li>
-                  <button>{t("plsce")}</button>
+                  <button>{t("place")}</button>
                 </li>
                 <li>
                   <button>{t("contacts")}</button>

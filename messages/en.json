@@ -14,6 +14,17 @@
     "subtitle": "We sell and rent the best residences in town",
     "GreenMarineDescription": "Silvi Marina directly on the sea, apartment rentals in residences in Silvi Marina for the holidays. They are two completely fenced residences with a large communal park directly on the sea..."
   },
+  "GreenMarine": {
+    "photo": "show other 7 photos",
+    "beach": "Beach",
+    "beachDescription": "our fantastic apartments are seafront and with super quick access to the beach",
+    "park": "Fenced Park",
+    "parkDescription": "They are two completely fenced residences with a large communal park directly on the sea, bordering the splendid beach.",
+    "tourist": "Toursit Area",
+    "touristDescription": "Our residences are in a high-traffic area near restaurants, bars and clubs",
+    "description": "Silvi Marina directly on the sea, apartment rentals in residences in Silvi Marina for the holidays. They are two completely fenced residences with a large communal park directly on the sea, bordering the splendid beach. They are located in the southern area of ​​the country, right in the area with the greatest tourist accommodation. Ideal for families, for young people and for those seeking tranquility and rest on their holiday. Entertainment and leisure opportunities just a short distance from the residences. Shops, bars and restaurants outside the residence itself. In these structures, studio apartments with 3 beds – two-room apartments with 4/5 beds – three-room apartments with 6/7 beds are available.",
+    "descriptionWord": "Description"
+  },
   "Footer": {
     "where we are": "Where we are",
     "officeHours": {
