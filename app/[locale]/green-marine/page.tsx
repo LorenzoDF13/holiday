@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import { useTranslations } from "next-intl";
 export default function Home() {
   const t = useTranslations("GreenMarine");
+  const tableT = useTranslations("GreenMarine.Table");
   useEffect(() => {
     //document.getElementById("enter")!.style.height = "0";
     AOS.init();
@@ -85,7 +86,25 @@ export default function Home() {
           data-aos="fade-up"
           className="max-w-screen-lg px-4 m-auto  rounded-md my-12"
         >
-          <TipologieTable></TipologieTable>
+          <TipologieTable
+            header={[
+              tableT("characteristics"),
+              tableT("studioFlat"),
+              tableT("twoRoom"),
+              tableT("threeRoom1"),
+              tableT("threeRoom2"),
+            ]}
+            content={[
+              [tableT("beds"), "3", "4/5", "6/7", "6/7"],
+              [tableT("kitchenette"), "si", "si", "si", "si"],
+              [tableT("LDD"), "si", "si", "si", "si"],
+              [tableT("singleBed"), "si", "no", "no", "no"],
+              [tableT("doubleRoom"), "no", "si", "si", "si"],
+              [tableT("balcony"), "si", "si", "si", "si"],
+              [tableT("roomBed"), "no", "no", "si", "si"],
+              [tableT("bathrooms"), "1", "1", "1", "2"],
+            ]}
+          ></TipologieTable>
         </section>
 
         <section

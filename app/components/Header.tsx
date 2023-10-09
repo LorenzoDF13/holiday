@@ -32,7 +32,7 @@ const Header = (props: Props) => {
           </div>
           <div className="flex  justify-end">
             <div className=" hidden sm:block ">
-              <div className="dropdown dropdown-bottom  dropdown-end  ">
+              <div className="dropdown dropdown-bottom   ">
                 <label tabIndex={0} className="btn btn-ghost ">
                   {t("rent")}
                   <svg

@@ -23,7 +23,22 @@
     "tourist": "Area Turistica",
     "touristDescription": "I nostri residence sono in una zona ad alta frequentazione vicino a ristoranti bar e locali",
     "description": "Silvi Marina direttamente sul mare, affitti appartamenti in residence a Silvi Marina per le vacanze. Sono due residence completamente recintati con grande parco condominiale direttamente sul mare, confinante con la splendida spiaggia. Si trovano nella zona sud del paese, proprio nella zona con maggiore ricettività turistica. Ideale per le famiglie, per i giovani e per chi cerca nella vacanza tranquillità e riposo. Divertimenti e opportunità di svago a pochissima distanza dai residences. Negozi, bar e ristoranti all’esterno del residence stesso. In queste strutture sono disponibili monolocali 3 letti – bilocali 4/5 letti – trilocali 6/7 letti.",
-    "descriptionWord": "Descrizione"
+    "descriptionWord": "Descrizione",
+    "Table": {
+      "characteristics": "Caratteristiche",
+      "studioFlat": "Monolocale",
+      "twoRoom": "Bilocale",
+      "threeRoom1": "Trilocale 1",
+      "threeRoom2": "Trilocale 2",
+      "beds": "Posti Letto",
+      "kitchenette": "Angolo Cottura",
+      "LDD": "Soggiorno, pranzo, divano letto doppio",
+      "singleBed": "Letto Singolo",
+      "doubleRoom": "Camera Matrimoniale",
+      "balcony": "Balcone Attrezzato",
+      "roomBed": "Camera con due letti singoli",
+      "bathrooms": "Bagni"
+    }
   },
   "Footer": {
     "where we are": "Dove siamo",

@@ -2,9 +2,11 @@
 import React, { MutableRefObject, useEffect, useRef } from "react";
 
 import { FaXmark, FaCheck } from "react-icons/fa6";
-type Props = {};
-
-const TipologieTable = (props: Props) => {
+type Props = {
+  header: string[];
+  content: string[][];
+};
+const TipologieTable = ({ header, content }: Props) => {
   const theadRowRef = useRef<HTMLTableRowElement>(null);
   useEffect(() => {
     let children = theadRowRef?.current?.querySelectorAll(
@@ -50,86 +52,23 @@ const TipologieTable = (props: Props) => {
         {/* head */}
         <thead className="font-extrabold text-base-content">
           <tr ref={theadRowRef}>
-            <th>Caratteristiche</th>
-            <th className="">
-              <span>Monolocale</span>
-            </th>
-            <th>
-              <span>Bilocale</span>
-            </th>
-            <th>
-              <span>Trilocale</span>
-            </th>
-            <th>
-              <span>Trilocale 2</span>
-            </th>
+            {header.map((h) => {
+              return <th>{h}</th>;
+            })}
           </tr>
         </thead>
         <tbody>
-          {/* row 1 */}
-          <tr className="hover:bg-base-300 ">
-            <td>Posti letto</td>
-            <td>3</td>
-            <td>4/5</td>
-            <td>6/7</td>
-            <td>6/7</td>
-          </tr>
-          {/* row 2 */}
-          <tr className="hover:bg-base-300 ">
-            <td>Angolo cottura</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-          </tr>
-          {/* row 3 */}
-          <tr className="hover:bg-base-300 ">
-            <td>Soggiorno, pranzo, divano letto doppio</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-          </tr>
-          {/* row 4 */}
-          <tr className="hover:bg-base-300 ">
-            <td>Letto singolo</td>
-            <td>{si()}</td>
-            <td>{no()}</td>
-            <td>{no()}</td>
-            <td>{no()}</td>
-          </tr>
-          {/* row 5 */}
-          <tr className="hover:bg-base-300 ">
-            <td>Camera matrimoniale</td>
-            <td>{no()}</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-          </tr>
-          {/* row 6 */}
-          <tr className="hover:bg-base-300 ">
-            <td>Balcone Attrezzato</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-          </tr>
-          {/* row 7 */}
-          <tr className="hover:bg-base-300 ">
-            <td>Camera con due letti singoli</td>
-            <td>{no()}</td>
-            <td>{no()}</td>
-            <td>{si()}</td>
-            <td>{si()}</td>
-          </tr>
-          {/* row 8 */}
-          <tr className="hover:bg-base-300 ">
-            <td>Bagni</td>
-            <td>1</td>
-            <td>1</td>
-            <td>1</td>
-            <td>2</td>
-          </tr>
+          {content.map((e) => {
+            return (
+              <tr className="hover:bg-base-300">
+                {e.map((cell) => {
+                  return (
+                    <td>{cell == "si" ? si() : cell == "no" ? no() : cell}</td>
+                  );
+                })}
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>
