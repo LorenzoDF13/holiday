@@ -23,10 +23,21 @@ const Page = (props: Props): React.ReactNode => {
         />
         <div className=" text-center mx-auto header prose translate-x-1/2 -translate-y-1/2 top-1/3 right-1/2 absolute flex justify-between  rounded-box ">
           <div>
-            <h1 className="text-6xl  font-extrabold mb-4 bg-gradient-to-r  from-blue-700 via-blue-800 to-gray-700 bg-clip-text text-transparent">
+            <h1
+              data-aos="zoom-out-up"
+              data-aos-delay="400"
+              data-aos-duration="1000"
+              className="text-6xl  font-extrabold mb-4 bg-gradient-to-r  from-blue-700 via-blue-800 to-gray-700 bg-clip-text text-transparent"
+            >
               Holiday Services
             </h1>
-            <h3 className="">{t("subtitle")}</h3>
+            <h3
+              data-aos="zoom-in-up"
+              data-aos-duration="1000"
+              data-aos-delay="1400"
+            >
+              {t("subtitle")}
+            </h3>
           </div>
         </div>
         <div className="h-0 bg-gradient-to-b from-[#4e5063] to-white"></div>

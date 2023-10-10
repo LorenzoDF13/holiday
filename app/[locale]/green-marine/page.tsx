@@ -1,8 +1,6 @@
 "use client";
 import { FaUmbrellaBeach, FaCity } from "react-icons/fa";
 import { PiParkFill } from "react-icons/pi";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Card from "../../components/Card";
 import TipologieTable from "../../components/TipologieTable";
 import PhotoGallery from "../../components/PhotoGallery";
@@ -13,7 +11,6 @@ export default function Home() {
   const tableT = useTranslations("GreenMarine.Table");
   useEffect(() => {
     //document.getElementById("enter")!.style.height = "0";
-    AOS.init();
     //setTimeout(() => {
     //  document.getElementById("logo").style.display = "none";
     //}, 100);

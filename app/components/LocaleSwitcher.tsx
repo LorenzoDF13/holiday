@@ -102,7 +102,7 @@ export default function LocaleSwitcher() {
           return (
             <li key={i}>
               <button
-                className="flex justify-end"
+                className="flex justify-between"
                 onClick={() => changeLocale(cur)}
               >
                 {eval(cur + "(30,20)")}

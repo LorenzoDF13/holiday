@@ -52,18 +52,20 @@ const TipologieTable = ({ header, content }: Props) => {
         {/* head */}
         <thead className="font-extrabold text-base-content">
           <tr ref={theadRowRef}>
-            {header.map((h) => {
-              return <th>{h}</th>;
+            {header.map((h, i) => {
+              return <th key={i}>{h}</th>;
             })}
           </tr>
         </thead>
         <tbody>
-          {content.map((e) => {
+          {content.map((e, i) => {
             return (
-              <tr className="hover:bg-base-300">
-                {e.map((cell) => {
+              <tr key={i + 999} className="hover:bg-base-300">
+                {e.map((cell, j) => {
                   return (
-                    <td>{cell == "si" ? si() : cell == "no" ? no() : cell}</td>
+                    <td key={i + j}>
+                      {cell == "si" ? si() : cell == "no" ? no() : cell}
+                    </td>
                   );
                 })}
               </tr>

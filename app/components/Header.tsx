@@ -1,15 +1,45 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import ThemeSwitcher from "./ThemeSwitcher";
 import Link from "next-intl/link";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import LocaleSwitcher from "./LocaleSwitcher";
 import { useTranslations } from "next-intl";
+import { usePathname } from "next-intl/client";
+import { useTheme } from "next-themes";
 
 type Props = {};
 const Header = (props: Props) => {
+  const pathname = usePathname();
   const t = useTranslations("Header");
+  const { resolvedTheme: theme } = useTheme();
+  useEffect(() => {
+    AOS.init();
+    const id = "style1234";
+    if (pathname == "/" && theme == "dark") {
+      const style =
+        document.head.querySelector("#" + id) ||
+        document.createElement("style");
+
+      style.id = id;
+      style.innerHTML = `header .btn-ghost {
+              color:hsl(var(--n));
+              --bc: 0 100% 100%;
+            }
+            `;
+      document.head.appendChild(style);
+      console.log("added style");
+    } else {
+      const s = document.head.querySelector("#" + id);
+      if (s) {
+        s.innerHTML = "";
+      }
+    }
+    console.log(pathname);
+  }, [pathname, theme]);
   return (
-    <header>
+    <header data-aos="fade-down">
       <div className="max-w-screen-lg px-4 m-auto">
         <div className="navbar   p-0 ">
           <div className="flex-1 ">
