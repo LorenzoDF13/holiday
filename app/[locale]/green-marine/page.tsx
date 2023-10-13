@@ -5,7 +5,9 @@ import Card from "../../components/Card";
 import TipologieTable from "../../components/TipologieTable";
 import PhotoGallery from "../../components/PhotoGallery";
 import { useEffect } from "react";
+import React from "react-dom/server";
 import { useTranslations } from "next-intl";
+import { LuBedDouble } from "react-icons/lu";
 export default function Home() {
   const t = useTranslations("GreenMarine");
   const tableT = useTranslations("GreenMarine.Table");

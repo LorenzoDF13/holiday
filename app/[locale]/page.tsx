@@ -1,9 +1,13 @@
 "use client";
 import Image from "next/image";
 import React from "react";
-import imgGreenMarine from "../../public/green-marine/2.webp";
+import imgGreenMarine from "../../public/green-marine/portrait.webp";
 import Link from "next-intl/link";
 import { useTranslations } from "next-intl";
+import { LuBath, LuBedDouble, LuShrink } from "react-icons/lu";
+import { AiFillStar } from "react-icons/ai";
+import { IconContext } from "react-icons";
+import PropetyCard from "../components/PropetyCard";
 type Props = {};
 
 const Page = (props: Props): React.ReactNode => {
@@ -42,31 +46,9 @@ const Page = (props: Props): React.ReactNode => {
         </div>
         <div className="h-0 bg-gradient-to-b from-[#4e5063] to-white"></div>
       </div>
-      <div className="flex flex-wrap justify-center gap-10">
-        <div className="card w-96  card-compact sm:card-normal bg-base-100 shadow-xl">
-          <Link href={"/green-marine"}>
-            <figure>
-              <Image src={imgGreenMarine} alt="green marine" />{" "}
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Residence Green Marine</h2>
-
-              <p>{t("GreenMarineDescription")}</p>
-            </div>
-          </Link>
-        </div>
-        <div className="card w-96 card-compact sm:card-normal bg-base-100 shadow-xl">
-          <Link href={"/green-marine"}>
-            <figure>
-              <Image src={imgGreenMarine} alt="green marine" />{" "}
-            </figure>
-            <div className="card-body">
-              <h2 className="card-title">Residence Green Marine</h2>
-
-              <p>{t("GreenMarineDescription")}</p>
-            </div>
-          </Link>
-        </div>
+      <div className="flex flex-wrap gap-7 justify-center max-w-screen-xl m-auto items-center">
+        <PropetyCard />
+        <PropetyCard />
       </div>
     </main>
   );

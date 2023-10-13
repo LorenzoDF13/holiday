@@ -64,7 +64,13 @@ const TipologieTable = ({ header, content }: Props) => {
                 {e.map((cell, j) => {
                   return (
                     <td key={i + j}>
-                      {cell == "si" ? si() : cell == "no" ? no() : cell}
+                      {cell == "si" ? (
+                        si()
+                      ) : cell == "no" ? (
+                        no()
+                      ) : (
+                        <span dangerouslySetInnerHTML={{ __html: cell }}></span>
+                      )}
                     </td>
                   );
                 })}

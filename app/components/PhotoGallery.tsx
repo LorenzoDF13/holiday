@@ -6,12 +6,6 @@ import Image from "next/image";
 
 import img1 from "../../public/green-marine/1.webp";
 import img2 from "../../public/green-marine/2.webp";
-import img3 from "../../public/green-marine/3.webp";
-import img4 from "../../public/green-marine/4.webp";
-import img5 from "../../public/green-marine/5.webp";
-import img6 from "../../public/green-marine/6.webp";
-import img7 from "../../public/green-marine/7.webp";
-import img8 from "../../public/green-marine/8.webp";
 
 import hero from "../../public/green-marine/hero.jpg";
 import { useTranslations } from "next-intl";
@@ -34,7 +28,13 @@ const PhotoGallery = (props: Props) => {
   ];
   const t = useTranslations("GreenMarine");
   return (
-    <Gallery options={{ bgOpacity: 0.5, mainClass: "bg-base-100" }}>
+    <Gallery
+      options={{
+        bgOpacity: 0.5,
+        mainClass: "bg-base-100",
+        secondaryZoomLevel: 2,
+      }}
+    >
       <div>
         <div className="flex gap-4 m-auto mt-12 flex-col md:flex-row  max-w-screen-lg px-4 mx-auto">
           <div className=" md:max-w-2/3 w-full hover:bg-neutral-400 hover:opacity-50  relative  hover:text-base-300  cursor-pointer transition-all rounded-md overflow-hidden ">
