@@ -10,7 +10,6 @@ const config: Config = {
   plugins: [require("@tailwindcss/typography"), require("daisyui")],
   daisyui: {
     themes: [
-      "emerald",
       {
         light: {
           ...require("daisyui/src/theming/themes")["[data-theme=winter]"],
@@ -22,9 +21,6 @@ const config: Config = {
         },
       },
       ,
-      "winter",
-      "aqua",
-      "fantasy",
     ],
   },
 };

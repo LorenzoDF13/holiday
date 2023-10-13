@@ -8,6 +8,11 @@
     object-fit: cover;
   }
 }
+@layer components {
+  .badge-lg {
+    @apply px-6 py-4 shadow-none rounded-full;
+  }
+}
 td {
   text-align: center;
 }

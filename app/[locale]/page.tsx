@@ -7,7 +7,9 @@ import { useTranslations } from "next-intl";
 import { LuBath, LuBedDouble, LuShrink } from "react-icons/lu";
 import { AiFillStar } from "react-icons/ai";
 import { IconContext } from "react-icons";
-import PropetyCard from "../components/PropetyCard";
+import PropetyCard from "../components/PropertyCard";
+import HomePageProperties from "../components/HomePageProperties";
+import BadgesFiltering from "../components/BadgesFiltering";
 type Props = {};
 
 const Page = (props: Props): React.ReactNode => {
@@ -44,12 +46,9 @@ const Page = (props: Props): React.ReactNode => {
             </h3>
           </div>
         </div>
-        <div className="h-0 bg-gradient-to-b from-[#4e5063] to-white"></div>
       </div>
-      <div className="flex flex-wrap gap-7 justify-center max-w-screen-xl m-auto items-center">
-        <PropetyCard />
-        <PropetyCard />
-      </div>
+      <BadgesFiltering />
+      <HomePageProperties />
     </main>
   );
 };

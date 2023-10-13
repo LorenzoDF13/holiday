@@ -83,15 +83,6 @@ const ThemeSwitcher = (props: Props) => {
         <li>
           <Button theme="dark" titolo="Scuro" />
         </li>
-        <li>
-          <Button theme="aqua" titolo="Mare" />
-        </li>
-        <li>
-          <Button theme="winter" titolo="Inverno" />
-        </li>
-        <li>
-          <Button theme="fantasy" titolo="Fantasy" />
-        </li>
       </ul>
     </div>
   );
