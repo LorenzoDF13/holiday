@@ -20,7 +20,7 @@ type Props = {
 const PropertyCard = (props: Props) => {
   const t = useTranslations("Index");
   return (
-    <div className="w-fit dark:shadow-gray-700 dark:hover:shadow-gray-700 rounded-xl flex flex-col lg:flex-row  h-auto card-side  bg-base-100 shadow ease-in-out hover:shadow-xl duration-500">
+    <div className="w-fit dark-shadow dark:hover:shadow-gray-700 rounded-xl flex flex-col lg:flex-row  h-auto card-side  bg-base-100 shadow ease-in-out hover:shadow-xl duration-500">
       <Image
         className="w-full aspect-[9/14] lg:w-48 object-cover rounded-l-lg lg:rounded-tr-none lg:rounded-br-none"
         src={props.image}

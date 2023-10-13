@@ -7,6 +7,9 @@
     @apply rounded-md shadow-xl;
     object-fit: cover;
   }
+  [data-theme="dark"] .dark-shadow {
+    @apply shadow-gray-700 hover:shadow-gray-700;
+  }
 }
 @layer components {
   .badge-lg {
