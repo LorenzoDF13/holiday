@@ -61,7 +61,7 @@ const Header = (props: Props) => {
             </Link>
           </div>
           <div className="flex  justify-end">
-            <div className=" hidden sm:block ">
+            <div className=" hidden lg:block ">
               <div className="dropdown dropdown-bottom   ">
                 <label tabIndex={0} className="btn btn-ghost ">
                   {t("rent")}
@@ -96,7 +96,7 @@ const Header = (props: Props) => {
               <ThemeSwitcher />
               <LocaleSwitcher />
             </div>
-            <div className="dropdown dropdown-bottom dropdown-end sm:hidden">
+            <div className="dropdown dropdown-bottom dropdown-end lg:hidden">
               <label tabIndex={0} className="btn btn-ghost btn-circle">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"

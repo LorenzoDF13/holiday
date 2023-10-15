@@ -15,6 +15,9 @@
   .badge-lg {
     @apply px-6 py-4 shadow-none rounded-full;
   }
+  .badge {
+    user-select: none;
+  }
 }
 td {
   text-align: center;
@@ -37,13 +40,24 @@ tbody tr td:first-child {
   font-weight: bold;
   text-align: left;
 }
-* {
+
+*,
+*:before,
+*:after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
 }
 body {
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 ::-webkit-scrollbar-track {

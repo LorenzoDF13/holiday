@@ -18,7 +18,7 @@ export default function Home() {
     //}, 100);
   }, []);
   return (
-    <main>
+    <main className="overflow-x-hidden">
       {/* <div
         id="enter"
         className="fixed flex justify-center items-center   prose max-w-none  top-0 w-screen h-screen bg-base-300 delay-200 transition-all duration-500 z-50 overflow-hidden "
@@ -42,8 +42,8 @@ export default function Home() {
       </div> */}
       <div>
         <PhotoGallery />
-        <div className=" prose m-auto text-center my-12 w-full max-w-screen-lg">
-          <h1 data-aos="zoom-out">
+        <div className="prose m-auto text-center my-12 w-full max-w-screen-lg">
+          <h1 data-aos="zoom-out " data-aos-once="true">
             Residence{" "}
             <span className="from-blue-700 via-blue-800 to-blue-900 bg-clip-text text-transparent bg-gradient-to-r">
               Green Marine
