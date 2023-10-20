@@ -16,7 +16,11 @@
     "beds": "Letti",
     "baths": "{count, plural, =1 {Bagno} other {Bagni}}",
     "price": "Prezzo",
-    "rating": "Valutazione"
+    "rating": "Valutazione",
+    "studioFlat": "Monolocali",
+    "twoRoom": "Bilocali",
+    "threeRoom": "Trilocali",
+    "villas": "Villini"
   },
   "GreenMarine": {
     "photo": "visualizza altre 7 foto",

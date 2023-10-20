@@ -1,4 +1,5 @@
 "use client";
+import { useTranslations } from "next-intl";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import React from "react";
@@ -6,6 +7,7 @@ import React from "react";
 type Props = {};
 
 const BadgesFiltering = (props: Props) => {
+  const t = useTranslations("Index");
   const pathname = usePathname();
   const router = useRouter();
   const params = useSearchParams();
@@ -22,7 +24,7 @@ const BadgesFiltering = (props: Props) => {
           "monolocale" == tipo && "badge-primary"
         }`}
       >
-        monolocali
+        {t("studioFlat")}
       </div>
       <div
         onClick={() => cambiaTipo("bilocale")}
@@ -30,7 +32,7 @@ const BadgesFiltering = (props: Props) => {
           "bilocale" == tipo && "badge-primary"
         }`}
       >
-        bilocali
+        {t("twoRoom")}
       </div>
       <div
         onClick={() => cambiaTipo("trilocale")}
@@ -38,7 +40,7 @@ const BadgesFiltering = (props: Props) => {
           "trilocale" == tipo && "badge-primary"
         }`}
       >
-        trilocali
+        {t("threeRoom")}
       </div>
       <div
         onClick={() => cambiaTipo("villini")}
@@ -46,7 +48,7 @@ const BadgesFiltering = (props: Props) => {
           "villini" == tipo && "badge-primary"
         }`}
       >
-        villini
+        {t("villas")}
       </div>
     </div>
   );

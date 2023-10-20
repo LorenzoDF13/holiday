@@ -16,7 +16,11 @@
     "beds": "Beds",
     "baths": "{count, plural, =1 {Bath} other {Baths}}",
     "price": "Price",
-    "rating": "Rating"
+    "rating": "Rating",
+    "studioFlat": "Studio Flat",
+    "twoRoom": "Two Room",
+    "threeRoom": "Three Room",
+    "villas": "Villas"
   },
   "GreenMarine": {
     "photo": "show other 7 photos",
