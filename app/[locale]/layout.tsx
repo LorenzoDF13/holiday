@@ -16,6 +16,8 @@ export const metadata: Metadata = {
   title: "Holiday Services Agenzia Vacanze Silvi Marina",
   description:
     "Affitti case vacanze sul mare a Silvi Marina, residences, villini, appartamenti per le tue vacanze al mare in Abruzzo - Agenzia Vacanze Silvi Marina. ",
+  keywords:
+    "affitti case vacanze, silvi marina, abruzzo, agenzia vacanze silvi marina, vacanze al mare, residence, villini, appartamenti, vacanze in abruzzo, vacanze al mare in abruzzo, vacanze al mare in italia, vacanze al mare in silvi marina, vacanze al mare in silvi marina abruzzo ",
 };
 export function generateStaticsParams() {
   return [{ locale: "en" }, { locale: "it" }];
